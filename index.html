@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description" content="AFTER THE LAST SERVER — an archive of machines still waiting.">
+  <title>AFTER THE LAST SERVER</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="museum" aria-labelledby="museum-title">
+    <header class="museum-header">
+      <p class="index-mark">ARCHIVE / 01</p>
+      <h1 id="museum-title">AFTER THE LAST SERVER</h1>
+      <p class="subtitle">An archive of machines still waiting.</p>
+    </header>
+
+    <section class="room" aria-labelledby="room-title">
+      <div class="room-meta">
+        <p>01</p>
+        <h2 id="room-title">RECONNECT</h2>
+      </div>
+
+      <article class="artifact" aria-label="Disconnected application">
+        <div class="window">
+          <div class="window-bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+
+          <div class="window-body">
+            <p class="machine-label">CONNECTION STATUS</p>
+            <p id="status" class="status" aria-live="polite">Disconnected</p>
+            <button id="reconnect" type="button">Reconnect</button>
+          </div>
+        </div>
+
+        <p id="plaque" class="plaque" hidden>
+          The interface kept waiting after there was nobody left to wait for.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <span>ROOM 01 / OPEN</span>
+      <span>2026</span>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
