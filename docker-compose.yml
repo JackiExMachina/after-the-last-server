@@ -1,0 +1,14 @@
+services:
+  after-the-last-server:
+    build: .
+    container_name: after-the-last-server
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8091:80"
+    networks:
+      - default
+      - kairos_vault
+
+networks:
+  kairos_vault:
+    external: true
